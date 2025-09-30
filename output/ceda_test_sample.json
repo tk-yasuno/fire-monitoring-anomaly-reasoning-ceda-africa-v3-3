@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-09-30T21:52:27.777964",
+  "system": "Fire Monitoring Anomaly Reasoning CEDA Africa v3.3",
+  "test_type": "CEDA Client Functionality Test",
+  "africa_fire_stats": {
+    "total_burned_area": 9038.066339165325,
+    "max_burned_area": 0.9796060873661903,
+    "mean_burned_area": 0.09975680554480994,
+    "active_cells": 90597,
+    "mean_confidence": 0.7495876833103354,
+    "high_confidence_cells": 36070,
+    "total_cells": 90601
+  },
+  "data_info": {
+    "product": "MODIS Fire_cci Burned Area Grid product v5.1",
+    "spatial_resolution": "0.25 x 0.25 degrees",
+    "temporal_resolution": "Monthly",
+    "time_range": "2001-01-01 to 2022-12-31",
+    "license": "Open Access",
+    "doi": "10.5285/3628cb2fdba443588155e15dee8e5352"
+  }
+}

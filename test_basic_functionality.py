@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-Basic functionality test for Fire Monitoring Anomaly Reasoning CEDA Africa v3.3
+Basic functionality test for Fire Monitoring Anomaly Reasoning CEDA Africa v3.3        
 """
 
 import sys
@@ -24,7 +25,7 @@ def test_imports():
 def test_core_modules():
     """Test core module imports"""
     try:
-        from src.ceda_client import CEDAFireClient
+        from src.ceda_client import CEDAFireCCIClient
         from src.multimodal_features import MultiModalFireFeatureProcessor
         from src.utils import setup_logging
         print("✅ Core modules imported successfully")
@@ -46,27 +47,27 @@ def test_main_scripts():
 
 def main():
     """Run basic tests"""
-    print("🔥 Fire Monitoring Anomaly Reasoning CEDA Africa v3.3 - Basic Tests")
+    print("🔥 Fire Monitoring Anomaly Reasoning CEDA Africa v3.3 - Basic Tests")      
     print("=" * 70)
-    
+
     tests = [
         ("Package imports", test_imports),
         ("Core modules", test_core_modules),
         ("Main scripts", test_main_scripts)
     ]
-    
+
     passed = 0
     total = len(tests)
-    
+
     for test_name, test_func in tests:
         print(f"\n🧪 Testing {test_name}...")
         if test_func():
             passed += 1
         else:
             print(f"   Test failed: {test_name}")
-    
+
     print(f"\n📊 Test Results: {passed}/{total} tests passed")
-    
+
     if passed == total:
         print("🎉 All tests passed! System is ready.")
         return 0

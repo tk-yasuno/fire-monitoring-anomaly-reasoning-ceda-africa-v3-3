@@ -1,0 +1,67 @@
+{
+  "timestamp": "2025-09-30T21:53:44.711858",
+  "system": "Fire Monitoring Anomaly Reasoning CEDA Africa v3.3",
+  "test_type": "MultiModal FIRMS Feature Processing Test",
+  "input_alerts_count": 3,
+  "africa_sample_data": [
+    {
+      "latitude": -10.5,
+      "longitude": 25.3,
+      "confidence": 85,
+      "frp": 12.5,
+      "brightness": 320,
+      "scan": 0.8,
+      "acq_date": "2022-01-15",
+      "acq_time": "1234",
+      "satellite": "T",
+      "instrument": "MODIS"
+    },
+    {
+      "latitude": 5.2,
+      "longitude": 15.8,
+      "confidence": 75,
+      "frp": 8.3,
+      "brightness": 315,
+      "scan": 1.2,
+      "acq_date": "2022-01-15",
+      "acq_time": "1456",
+      "satellite": "A",
+      "instrument": "MODIS"
+    },
+    {
+      "latitude": -5.1,
+      "longitude": 35.6,
+      "confidence": 92,
+      "frp": 15.7,
+      "brightness": 325,
+      "scan": 0.6,
+      "acq_date": "2022-01-15",
+      "acq_time": "1678",
+      "satellite": "T",
+      "instrument": "MODIS"
+    }
+  ],
+  "extracted_features": {
+    "basic_stats": {
+      "count": 3,
+      "mean_latitude": -3.4666666666666663,
+      "mean_longitude": 25.566666666666666,
+      "mean_brightness": 320.0,
+      "mean_confidence": 84.0,
+      "std_latitude": 7.976423592897592,
+      "std_longitude": 9.902693236354105
+    },
+    "geographic": {
+      "lat_range": 15.7,
+      "lon_range": 19.8,
+      "centroid_lat": -5.1,
+      "centroid_lon": 25.3
+    },
+    "density": {
+      "max_density": 1.0,
+      "mean_density": 0.037037037037037035,
+      "density_variance": 0.03566529492455418,
+      "active_cells": 3
+    }
+  }
+}

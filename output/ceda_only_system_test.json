@@ -1,0 +1,26 @@
+{
+  "system_info": {
+    "name": "Fire Monitoring Anomaly Reasoning CEDA Africa v3.3",
+    "version": "3.3",
+    "focus_region": "Africa Continental",
+    "test_date": "2025-09-30T21:55:34.345328",
+    "data_source": "CEDA ESA Fire_cci only"
+  },
+  "ceda_results": {
+    "dataset_info": {
+      "resolution": "0.25 degrees",
+      "africa_grid_size": "301x301",
+      "total_cells": 90601,
+      "coverage": "Continental Africa (35S-40N, 20W-55E)"
+    },
+    "fire_statistics": {
+      "total_burned_area": 9076.297672317389,
+      "max_burned_area": 0.9953649619096672,
+      "mean_burned_area": 0.10017878028186653,
+      "active_cells": 90596,
+      "mean_confidence": 0.7503011873973936,
+      "high_confidence_cells": 36353,
+      "total_cells": 90601
+    }
+  }
+}
