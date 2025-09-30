@@ -1,0 +1,131 @@
+{
+  "analysis_info": {
+    "timestamp": "2025-09-30T20:16:49.915371",
+    "system_version": "v3.3_ceda_only",
+    "data_source": "CEDA_Fire_cci_only",
+    "region": "Africa",
+    "analysis_period": "2022-01"
+  },
+  "detection_results": {
+    "total_grids_analyzed": 100,
+    "anomaly_grids_detected": 10,
+    "anomaly_detection_rate": 10.0,
+    "algorithm": "isolation_forest"
+  },
+  "risk_distribution": {
+    "critical_risk": 4,
+    "high_risk": 6,
+    "moderate_risk": 0
+  },
+  "satellite_analysis_info": {
+    "csv_file": "anomaly_grids_for_satellite_analysis_20250930_201649.csv",
+    "total_anomaly_sites": 10,
+    "coordinate_precision": "6_decimal_places",
+    "landsat_coverage": {
+      "path_range": "170-189",
+      "row_range": "50-78"
+    }
+  },
+  "top_priority_sites": [
+    {
+      "rank": 1,
+      "grid_id": 78,
+      "latitude": -8.59627,
+      "longitude": 16.433982,
+      "burned_area_km2": 0.628,
+      "risk_level": "critical",
+      "priority_score": 24.054,
+      "landsat_path_row": "174/50"
+    },
+    {
+      "rank": 2,
+      "grid_id": 42,
+      "latitude": 0.377206,
+      "longitude": 13.224941,
+      "burned_area_km2": 0.347,
+      "risk_level": "critical",
+      "priority_score": 22.02,
+      "landsat_path_row": "184/78"
+    },
+    {
+      "rank": 3,
+      "grid_id": 24,
+      "latitude": -13.544119,
+      "longitude": -8.035188,
+      "burned_area_km2": 0.328,
+      "risk_level": "critical",
+      "priority_score": 20.541,
+      "landsat_path_row": "176/66"
+    },
+    {
+      "rank": 4,
+      "grid_id": 27,
+      "latitude": -6.522609,
+      "longitude": 36.619985,
+      "burned_area_km2": 0.395,
+      "risk_level": "critical",
+      "priority_score": 20.121,
+      "landsat_path_row": "189/76"
+    },
+    {
+      "rank": 5,
+      "grid_id": 70,
+      "latitude": -29.562135,
+      "longitude": 24.436187,
+      "burned_area_km2": 0.26,
+      "risk_level": "high",
+      "priority_score": 18.051,
+      "landsat_path_row": "183/69"
+    },
+    {
+      "rank": 6,
+      "grid_id": 93,
+      "latitude": -11.270763,
+      "longitude": 20.844585,
+      "burned_area_km2": 0.301,
+      "risk_level": "high",
+      "priority_score": 17.922,
+      "landsat_path_row": "170/55"
+    },
+    {
+      "rank": 7,
+      "grid_id": 41,
+      "latitude": -32.947683,
+      "longitude": 0.906106,
+      "burned_area_km2": 0.174,
+      "risk_level": "high",
+      "priority_score": 16.769,
+      "landsat_path_row": "171/73"
+    },
+    {
+      "rank": 8,
+      "grid_id": 60,
+      "latitude": 35.050768,
+      "longitude": 20.032758,
+      "burned_area_km2": 0.245,
+      "risk_level": "high",
+      "priority_score": 17.004,
+      "landsat_path_row": "176/53"
+    },
+    {
+      "rank": 9,
+      "grid_id": 92,
+      "latitude": 0.868236,
+      "longitude": -15.053425,
+      "burned_area_km2": 0.227,
+      "risk_level": "high",
+      "priority_score": 16.893,
+      "landsat_path_row": "187/73"
+    },
+    {
+      "rank": 10,
+      "grid_id": 45,
+      "latitude": 3.951865,
+      "longitude": 20.870813,
+      "burned_area_km2": 0.194,
+      "risk_level": "high",
+      "priority_score": 16.518,
+      "landsat_path_row": "188/75"
+    }
+  ]
+}

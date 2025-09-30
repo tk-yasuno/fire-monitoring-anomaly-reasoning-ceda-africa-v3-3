@@ -1,0 +1,610 @@
+{
+  "system_info": {
+    "name": "Global Fire Monitoring and Anomaly Reasoning System",
+    "version": "3.3",
+    "processing_year": 2022,
+    "timestamp": "2025-09-30T19:41:54.131070"
+  },
+  "data_processing": {
+    "base_data": {
+      "processed_data": "        latitude   longitude  ... anomaly_score  is_anomaly\n0      53.112132  -54.706710  ...     -0.434323       False\n1      67.351397  -54.774441  ...     -0.388705       False\n2      56.912138  -54.640764  ...     -0.400312       False\n3      56.086469 -140.173559  ...     -0.413967       False\n4      35.592186  -53.069231  ...     -0.386066       False\n...          ...         ...  ...           ...         ...\n12495  13.503772 -147.868993  ...     -0.394246       False\n12496 -37.516511 -144.504161  ...     -0.399358       False\n12497  46.280748   85.469972  ...     -0.395360       False\n12498  15.437651  -46.568688  ...     -0.384117       False\n12499  33.010077 -174.261301  ...     -0.411175       False\n\n[12500 rows x 31 columns]",
+      "metadata": {
+        "data_type": "simulation"
+      }
+    },
+    "anomaly_detection": {
+      "detection_summary": {
+        "total_grids": 12500,
+        "anomalous_grids": "1250",
+        "anomaly_rate": 0.1,
+        "algorithm": "isolation_forest",
+        "contamination_rate": 0.1
+      },
+      "continent_distribution": {
+        "sum": {
+          "Africa": 507,
+          "Asia": 529,
+          "Europe": 62,
+          "North America": 31,
+          "Oceania": 63,
+          "South America": 58
+        },
+        "count": {
+          "Africa": 2200,
+          "Asia": 2200,
+          "Europe": 2000,
+          "North America": 2100,
+          "Oceania": 2000,
+          "South America": 2000
+        },
+        "mean": {
+          "Africa": 0.23045454545454547,
+          "Asia": 0.24045454545454545,
+          "Europe": 0.031,
+          "North America": 0.014761904761904763,
+          "Oceania": 0.0315,
+          "South America": 0.029
+        }
+      },
+      "feature_importance": {
+        "longitude": 105.38991867101379,
+        "month_9_fire": 6.2424381541876715,
+        "month_8_fire": 6.18515262861848,
+        "month_1_fire": 6.176641420393251,
+        "neighbor_mean": 6.12497706104978,
+        "month_5_fire": 6.1160983552284485,
+        "neighbor_std": 6.08552157229941,
+        "month_2_fire": 6.040324573598252,
+        "month_11_fire": 6.024074851261453,
+        "neighbor_max": 6.005719822725193
+      },
+      "anomaly_data": "        latitude   longitude  ... anomaly_score  is_anomaly\n0      53.112132  -54.706710  ...     -0.434323       False\n1      67.351397  -54.774441  ...     -0.388705       False\n2      56.912138  -54.640764  ...     -0.400312       False\n3      56.086469 -140.173559  ...     -0.413967       False\n4      35.592186  -53.069231  ...     -0.386066       False\n...          ...         ...  ...           ...         ...\n12495  13.503772 -147.868993  ...     -0.394246       False\n12496 -37.516511 -144.504161  ...     -0.399358       False\n12497  46.280748   85.469972  ...     -0.395360       False\n12498  15.437651  -46.568688  ...     -0.384117       False\n12499  33.010077 -174.261301  ...     -0.411175       False\n\n[12500 rows x 31 columns]",
+      "model_parameters": {
+        "algorithm": "isolation_forest",
+        "contamination": 0.1,
+        "n_estimators": 100,
+        "random_state": 42,
+        "bootstrap": false,
+        "max_features": 1.0,
+        "n_jobs": -1
+      }
+    },
+    "processing_timestamp": "2025-09-30T19:41:29.991409",
+    "year": 2022
+  },
+  "anomaly_reasoning": {
+    "reasoning_results": [
+      {
+        "grid_id": 9668,
+        "location": {
+          "latitude": 61.31514907098607,
+          "longitude": 101.97103107227146,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.8063037333931741,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 487.5561195582885,
+            "burned_area_total": 437.7723092052116,
+            "neighbor_max": 989.720537023099,
+            "neighbor_std": 294.970573210433
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 9556,
+        "location": {
+          "latitude": 44.79847562109521,
+          "longitude": 179.46356056770915,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.8058714548374923,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 1398.2214064144334,
+            "burned_area_total": 1222.687705171533,
+            "neighbor_max": 2648.4925565041485,
+            "neighbor_std": 862.8839816064431
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 9074,
+        "location": {
+          "latitude": 0.7310017976617722,
+          "longitude": 128.7902634603958,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.8036934370087777,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 589.9001523722999,
+            "burned_area_total": 1137.3264884425098,
+            "neighbor_max": 1315.211095764013,
+            "neighbor_std": 132.2183595706303
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 8650,
+        "location": {
+          "latitude": 36.15965380940654,
+          "longitude": 177.10270082034384,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.8036934370087777,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 268.8593699284943,
+            "burned_area_total": 135.7887123985342,
+            "neighbor_max": 419.1501579092441,
+            "neighbor_std": 119.85663611534126
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 8939,
+        "location": {
+          "latitude": 44.93485292291899,
+          "longitude": 94.76859696472737,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.8035806715969582,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 258.0511134688416,
+            "burned_area_total": 416.10499267506793,
+            "neighbor_max": 461.4750326310504,
+            "neighbor_std": 102.42224109310354
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 9359,
+        "location": {
+          "latitude": 25.329664099636176,
+          "longitude": 67.65836662951901,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.7993550449395423,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 160.9642822416515,
+            "burned_area_total": 229.68163045686552,
+            "neighbor_max": 456.9214870412487,
+            "neighbor_std": 77.527562920622
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 9464,
+        "location": {
+          "latitude": -0.15807251067015748,
+          "longitude": 159.85177742298941,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.7966554503645216,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 191.49979069738512,
+            "burned_area_total": 118.37127219720013,
+            "neighbor_max": 541.5269023132132,
+            "neighbor_std": 117.44690623435515
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 9699,
+        "location": {
+          "latitude": 38.54957773164213,
+          "longitude": 179.73639423801706,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.7927119639578634,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 172.90727606157864,
+            "burned_area_total": 269.3387723238753,
+            "neighbor_max": 472.44457540038275,
+            "neighbor_std": 101.30179838625408
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 8465,
+        "location": {
+          "latitude": 52.837640631755804,
+          "longitude": 147.23865409908052,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.7923550498279215,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 143.38378733218573,
+            "burned_area_total": 140.0677349160375,
+            "neighbor_max": 233.2947097759179,
+            "neighbor_std": 73.62496535932583
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 8845,
+        "location": {
+          "latitude": 47.16385362201368,
+          "longitude": 141.40543440825792,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.7901510708863275,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 83.63733944218463,
+            "burned_area_total": 111.96897114789299,
+            "neighbor_max": 193.78539291148718,
+            "neighbor_std": 64.89948429298293
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 8557,
+        "location": {
+          "latitude": 20.73453502811163,
+          "longitude": 73.70356906453388,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.7875448407878906,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 135.41942683975668,
+            "burned_area_total": 101.85109070276475,
+            "neighbor_max": 302.2632882571271,
+            "neighbor_std": 68.61736404649983
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 8718,
+        "location": {
+          "latitude": 21.22821292137037,
+          "longitude": 160.9479144969156,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.7861039486279895,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 118.31854577022021,
+            "burned_area_total": 188.2293328083153,
+            "neighbor_max": 329.125516107895,
+            "neighbor_std": 72.40251211004018
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 10377,
+        "location": {
+          "latitude": 62.514880000623506,
+          "longitude": 63.50138302819103,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.7852425941778632,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 95.1206724028014,
+            "burned_area_total": 129.43622135752713,
+            "neighbor_max": 189.4828768497154,
+            "neighbor_std": 70.1208824492704
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 9379,
+        "location": {
+          "latitude": 42.66087102281986,
+          "longitude": 60.01270548103892,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.7841768362486561,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 95.86471836276212,
+            "burned_area_total": 112.87089426864051,
+            "neighbor_max": 286.2096738636524,
+            "neighbor_std": 42.20105587700013
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      },
+      {
+        "grid_id": 9824,
+        "location": {
+          "latitude": 46.150535078827595,
+          "longitude": 113.10851207867398,
+          "continent": "Asia"
+        },
+        "anomaly_score": -0.7832936199440851,
+        "analysis": {
+          "key_features": {
+            "fire_activity": 121.79930073997693,
+            "burned_area_total": 123.2470677108247,
+            "neighbor_max": 220.0308426172423,
+            "neighbor_std": 51.115599132085094
+          },
+          "deviation_factors": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "risk_level": "critical"
+        },
+        "reasoning": {
+          "explanation": "Asiaの該当グリッドは極めて深刻な火災異常を示している。 主な要因: 極端に高い火災活動、近傍で異常な高火災値、近傍火災の高い変動性。 即座の現地調査と緊急対応体制の確立を推奨。",
+          "confidence": 0.75,
+          "model": "minicpm_placeholder",
+          "factors_identified": [
+            "極端に高い火災活動",
+            "近傍で異常な高火災値",
+            "近傍火災の高い変動性"
+          ],
+          "recommended_action": "即座の現地調査と緊急対応体制の確立を推奨。"
+        }
+      }
+    ],
+    "summary": {
+      "risk_level_distribution": {
+        "critical": 15
+      },
+      "continent_distribution": {
+        "Asia": 15
+      },
+      "common_factors": {
+        "極端に高い火災活動": 15,
+        "近傍火災の高い変動性": 15,
+        "近傍で異常な高火災値": 15
+      },
+      "total_anomalies_analyzed": 15
+    },
+    "timestamp": "2025-09-30T19:41:29.997403"
+  },
+  "performance_metrics": {
+    "total_grids_processed": 12500,
+    "anomalies_detected": "1250",
+    "anomaly_rate": 0.1,
+    "reasoning_completed": 15
+  }
+}

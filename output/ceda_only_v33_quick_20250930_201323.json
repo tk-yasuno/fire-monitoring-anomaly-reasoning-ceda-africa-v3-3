@@ -1,0 +1,61 @@
+{
+  "system_info": {
+    "version": "v3.3_ceda_only_quick",
+    "timestamp": "2025-09-30T20:13:23.168841",
+    "data_source": "CEDA_Fire_cci_only"
+  },
+  "summary": {
+    "total_grids": 100,
+    "anomaly_grids": 10,
+    "anomaly_rate": 10.0,
+    "total_burned_area_km2": 9059.55918624499,
+    "avg_burned_area_per_grid": 0.09999403081914095
+  },
+  "top_anomalies": [
+    {
+      "grid_id": 87,
+      "latitude": -33.43499465193659,
+      "longitude": 44.78648698905387,
+      "burned_area_km2": 0.8218159068269992,
+      "fire_activity": 8.218159068269992,
+      "anomaly_score": -0.7699771333036909,
+      "risk_level": "high"
+    },
+    {
+      "grid_id": 11,
+      "latitude": 4.794719325856924,
+      "longitude": 27.976432798301083,
+      "burned_area_km2": 0.506235007799676,
+      "fire_activity": 5.06235007799676,
+      "anomaly_score": -0.6914139848731916,
+      "risk_level": "high"
+    },
+    {
+      "grid_id": 61,
+      "latitude": -8.249324661128302,
+      "longitude": 2.5815350127284376,
+      "burned_area_km2": 0.2998624763449871,
+      "fire_activity": 2.998624763449871,
+      "anomaly_score": -0.6015498474910893,
+      "risk_level": "high"
+    },
+    {
+      "grid_id": 8,
+      "latitude": 9.075987750710162,
+      "longitude": -18.859246618933767,
+      "burned_area_km2": 0.2143550722515449,
+      "fire_activity": 2.143550722515449,
+      "anomaly_score": -0.5907112742787594,
+      "risk_level": "high"
+    },
+    {
+      "grid_id": 54,
+      "latitude": 19.27638391150616,
+      "longitude": -3.670702993715178,
+      "burned_area_km2": 0.2447594229854781,
+      "fire_activity": 2.447594229854781,
+      "anomaly_score": -0.5727108288233661,
+      "risk_level": "high"
+    }
+  ]
+}

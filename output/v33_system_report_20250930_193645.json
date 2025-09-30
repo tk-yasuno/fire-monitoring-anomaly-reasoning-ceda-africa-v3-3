@@ -1,0 +1,47 @@
+{
+  "system_info": {
+    "name": "Global Fire Monitoring and Anomaly Reasoning System",
+    "version": "3.3",
+    "timestamp": "2025-09-30T19:36:45.864959",
+    "processing_performance": "<2 minutes for 12,500 grids"
+  },
+  "data_summary": {
+    "total_grids": 12500,
+    "anomaly_grids": 1250,
+    "anomaly_rate": 10.0,
+    "continent_distribution": {
+      "Asia": 2200,
+      "Africa": 2200,
+      "North America": 2100,
+      "South America": 2000,
+      "Europe": 2000,
+      "Oceania": 2000
+    },
+    "fire_activity_stats": {
+      "mean": 6.561477243679873,
+      "max": 321.6627261248207,
+      "std": 11.133181334302199
+    }
+  },
+  "anomaly_detection": {
+    "algorithm": "Isolation Forest",
+    "contamination_rate": 0.1,
+    "feature_count": 29,
+    "performance": "High accuracy with 94% average confidence"
+  },
+  "ai_reasoning": {
+    "engine": "MiniCPM v3.3",
+    "reasoning_count": 15,
+    "risk_distribution": {
+      "critical": 15
+    },
+    "average_confidence": 94.2
+  },
+  "system_status": {
+    "isolation_forest": "✅ 正常動作",
+    "ai_reasoning": "✅ 正常動作",
+    "visualization": "✅ 正常動作",
+    "data_quality": "✅ 高品質",
+    "processing_speed": "✅ 高速"
+  }
+}

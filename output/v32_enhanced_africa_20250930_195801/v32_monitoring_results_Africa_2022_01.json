@@ -1,0 +1,21 @@
+{
+  "version": "3.2.0",
+  "region": "Africa",
+  "analysis_time": "2025-09-30T19:58:01.783623",
+  "v31_results": {
+    "continent": "Africa",
+    "timestamp": "2025-09-30 19:58:01.786751",
+    "total_alerts": 0,
+    "average_temperature": 0.0,
+    "data_source": "ERROR",
+    "error": "'Africa'"
+  },
+  "v32_features": null,
+  "integrated_analysis": {
+    "integration_status": {
+      "v31_available": true,
+      "v32_available": false,
+      "analysis_timestamp": "2025-09-30T19:58:01.787115"
+    }
+  }
+}

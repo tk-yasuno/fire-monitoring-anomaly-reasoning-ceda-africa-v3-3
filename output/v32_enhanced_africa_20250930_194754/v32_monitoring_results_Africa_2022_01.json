@@ -1,0 +1,54 @@
+{
+  "version": "3.2.0",
+  "region": "Africa",
+  "analysis_time": "2025-09-30T19:47:54.082921",
+  "v31_results": null,
+  "v32_features": {
+    "firms_features": {
+      "basic_stats": {
+        "count": 10,
+        "mean_latitude": -2.6789163373309073,
+        "mean_longitude": 13.704935845580701,
+        "mean_brightness": 375.81663172687183,
+        "mean_confidence": 57.339827388128654,
+        "std_latitude": 18.46954440003682,
+        "std_longitude": 29.597375409026515
+      },
+      "geographic": {
+        "lat_range": 50.152901115040564,
+        "lon_range": 74.35745950876525,
+        "centroid_lat": -2.4170607864995013,
+        "centroid_lon": 22.616043278000127
+      },
+      "density": {
+        "max_density": 1.0,
+        "mean_density": 0.12345679012345678,
+        "density_variance": 0.10821521109586955,
+        "active_cells": "10"
+      },
+      "text_features": {
+        "feature_matrix": "[[0 0 0 0 1 0 1 0]\n [0 0 0 0 0 0 1 0]\n [0 0 0 0 0 0 1 0]\n [0 0 0 0 1 0 1 0]\n [0 0 0 0 0 0 1 0]\n [0 0 0 0 0 0 1 0]\n [0 0 0 0 0 0 1 0]\n [0 0 0 0 0 0 1 0]\n [0 0 0 0 0 0 1 0]\n [0 0 0 0 1 0 1 0]]",
+        "feature_dim": 8,
+        "sample_count": 10
+      }
+    },
+    "ceda_features": {
+      "burned_area": {
+        "total_burned_area": 9035.389521268682,
+        "max_burned_area": 0.973762489327703,
+        "mean_burned_area": 0.09972726041951725,
+        "active_cells": 90596,
+        "burned_area_variance": 0.009856671309063971,
+        "burned_area_skewness": 1.9357540006582883
+      },
+      "confidence": {
+        "mean_confidence": 0.7489509670137291,
+        "high_confidence_cells": 36014,
+        "confidence_variance": 0.020912273541101763,
+        "confidence_skewness": 0.005566627645880709
+      },
+      "land_cover": {
+        "dominant_class": 18,
+        "class_diversity": 18,
+        "class_distribution": {
+          

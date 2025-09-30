@@ -1,0 +1,62 @@
+{
+  "version": "3.2.0",
+  "region": "global",
+  "analysis_time": "2025-09-30T19:46:41.989183",
+  "v31_results": null,
+  "v32_features": {
+    "firms_features": {
+      "basic_stats": {
+        "count": 1626,
+        "mean_latitude": 1.3838862554809728,
+        "mean_longitude": 17.629379422246437,
+        "mean_brightness": 374.9471699958597,
+        "mean_confidence": 61.80718351039071,
+        "std_latitude": 20.417178514527812,
+        "std_longitude": 21.680237844141537
+      },
+      "geographic": {
+        "lat_range": 71.93635027127642,
+        "lon_range": 74.96440534494991,
+        "centroid_lat": 2.3834251559844652,
+        "centroid_lon": 18.186382607472872
+      },
+      "density": {
+        "max_density": 33.0,
+        "mean_density": 20.074074074074073,
+        "density_variance": 22.21673525377229,
+        "active_cells": "81"
+      },
+      "text_features": {
+        "feature_matrix": "[[0 0 0 ... 0 1 0]\n [0 0 0 ... 0 1 0]\n [0 0 0 ... 0 1 0]\n ...\n [0 0 0 ... 0 1 0]\n [0 0 0 ... 0 1 0]\n [0 0 0 ... 0 1 0]]",
+        "feature_dim": 8,
+        "sample_count": 1626
+      }
+    },
+    "ceda_features": {},
+    "integration_metadata": {
+      "integration_time": "2025-09-30T19:46:50.564620",
+      "firms_available": true,
+      "ceda_available": false
+    }
+  },
+  "integrated_analysis": {
+    "integration_status": {
+      "v31_available": false,
+      "v32_available": true,
+      "analysis_timestamp": "2025-09-30T19:46:50.564620"
+    },
+    "v32_summary": {
+      "firms_features_count": 4,
+      "ceda_features_count": 0,
+      "cross_modal_available": false
+    },
+    "key_metrics": {
+      "total_alerts": 1626,
+      "mean_confidence": 61.80718351039071,
+      "geographic_spread": {
+        "lat_range": 71.93635027127642,
+        "lon_range": 74.96440534494991
+      }
+    }
+  }
+}

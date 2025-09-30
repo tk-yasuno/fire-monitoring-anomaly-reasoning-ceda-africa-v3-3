@@ -1,0 +1,14 @@
+{
+  "version": "3.2.0",
+  "region": "Africa",
+  "analysis_time": "2025-09-30T19:51:24.068908",
+  "v31_results": null,
+  "v32_features": null,
+  "integrated_analysis": {
+    "integration_status": {
+      "v31_available": false,
+      "v32_available": false,
+      "analysis_timestamp": "2025-09-30T19:51:24.069386"
+    }
+  }
+}
